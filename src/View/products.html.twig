@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quest Twig 1</title>
+</head>
+
+<body>
+    <h1>Voici la liste de nos produits :</h1>
+    <p>
+<ul>
+    {% for product in products %}
+        <li>{{ product }}</li>
+    {% endfor %}
+</ul>
+
+{{ dump(products) }}
+    </p>
+</body>
+</html>
